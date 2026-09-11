@@ -12,17 +12,18 @@ guo jia GUAE=<guo jia> GUAE=<guo jia>
 jie jue GIARE=<jie jue> GIARE=<jie jue>
 SIE=<xie> SIE=<xie> SHIE=<xie xie> SHIE=<xie xie>
 xi huan SHÜAN=<xi huan> SHÜAN=<xi huan>
-na li CLDI=<na li> CLDI=<na li>
+ren he SHGE=<ren he> SHGE=<ren he>
 
 za hui lüe fa
 zi ji ZGI=<zi ji> ZGI=<zi ji>
 can jia CGIA=<can jia> CGIA=<can jia>
-lao dong LDUARO=<lao dong> LDUARO=<lao dong>
 jie he HGIE=<jie he> HGIE=<jie he>
 xian zai ZHAR=<xian zai> ZHAR=<xian zai>
 bi SÜ=<xu> SBÜ=<bi xu> SBÜ=<bi xu>
 li SIANE=<xiang> SLIANE=<li xiang> SLIANE=<li xiang>
 she hui SHURE=<she hui> SHURE=<she hui>
+lao dong LDUARO=<lao dong> LDUARO=<lao dong>
+yue lai yue LÜRE=<yue lai yue> LÜRE=<yue lai yue>
 dan shi SDAN=<dan shi> SDAN=<dan shi>
 kai shi SKAR=<kai shi> SKAR=<kai shi>
 shi jie SGIE=<shi jie> SGIE=<shi jie>
@@ -39,6 +40,7 @@ zhong guo ZGO=<zhong guo> ZGO=<zhong guo>
 zhong guo ren ZGN=<zhong guo ren> ZGN=<zhong guo ren>
 wo men NO=<wo men> NO=<wo men>
 jing guo GINO=<jing guo> GINO=<jing guo>
+ke yi KIO=<ke yi> KIO=<ke yi>
 zhe ge ZO=<zhe ge> ZO=<zhe ge>
 yi ge ÜO=<yi ge> ÜO=<yi ge>
 ji ge GIO=<ji ge> GIO=<ji ge>
@@ -50,7 +52,7 @@ ti gong TIRO=<ti gong> TIRO=<ti gong>
 wen ti TÜN=<wen ti> TÜN=<wen ti>
 zhu yi ZFÜ=<zhu yi> ZFÜ=<zhu yi>
 ru guo HGO=<ru guo> HGO=<ru guo>
-yi ge ÜO=<yi ge> ÜO=<yi ge>
+bi yao BÜAO=<bi yao> BÜAO=<bi yao>
 
 jie yin lüe dai sheng mu
 ban fa BUA=<ban fa> BUA=<ban fa>
@@ -75,7 +77,7 @@ suo wei SURE=<suo wei> SURE=<suo wei>
 yi xia HIAE=<yi xia> HIAE=<yi xia>
 ÜNE=<yong> yuan ÜANE=<yong yuan> ÜANE=<yong yuan>
 
-jing SIANE=<xiang> ZIE=jie jian fa
+jing SIANE=<xiang> ZIE=<jie> jian fa
 jian pan HPAN=<jian pan> HPAN=<jian pan>
 yan jiu HGIR=<yan jiu> HGIR=<yan jiu>
 kun nan HKUAN=<kun nan> HKUAN=<kun nan>
@@ -96,9 +98,7 @@ SHG=<shen me> SHO=<shi hou> SHGO=<shen me shi hou> SHGO=<shen me shi hou>
 SHG=<shen me> yi si SHGIR=<shen me yi si> SHGIR=<shen me yi si>
 SHG=<shen me> CUARO=<qing kuang> SHGUARO=<shen me qing kuang> SHGUARO=<shen me qing kuang>
 mei you ZFB=<mei you> ZFB=<mei you>
-you mei you ZFBIR=<you mei you> ZFBIR=<you mei you>
-ke yi KR=<ke yi> KR=<ke yi>
-yue lai yue CLDÜE=<yue lai yue> CLDÜE=<yue lai yue>
+you mei you ZFBRO=<you mei you> ZFBRO=<you mei you>
 
 //
 
@@ -116,18 +116,19 @@ yue lai yue CLDÜE=<yue lai yue> CLDÜE=<yue lai yue>
 解決[解決][解決]
 謝謝[謝謝][謝謝]
 喜歡[喜歡][喜歡]
-哪裏[哪裏][哪裏]
+任何[任何][任何]
 
 雜燴略法
 
 自己[自己][自己]
 參加[參加][參加]
-勞動[勞動][勞動]
 結合[結合][結合]
 現在[現在][現在]
 必須[必須][必須]
 理想[理想][理想]
 社會[社會][社會]
+勞動[勞動][勞動]
+越來越[越來越][越來越]
 但是[但是][但是]
 開始[開始][開始]
 世界[世界][世界]
@@ -144,6 +145,7 @@ yue lai yue CLDÜE=<yue lai yue> CLDÜE=<yue lai yue>
 中國人[中國人][中國人]
 我們[我們][我們]
 經過[經過][經過]
+可以[可以][可以]
 這個[這個][這個]
 一個[一個][一個]
 幾個[幾個][幾個]
@@ -155,7 +157,7 @@ yue lai yue CLDÜE=<yue lai yue> CLDÜE=<yue lai yue>
 問題[問題][問題]
 主義[主義][主義]
 如果[如果][如果]
-一個[一個][一個]
+必要[必要][必要]
 
 介音略代聲母
 辦法[辦法][辦法]
@@ -202,5 +204,3 @@ yue lai yue CLDÜE=<yue lai yue> CLDÜE=<yue lai yue>
 [什麼][情況][什麼情況][什麼情況]
 沒有[沒有][沒有]
 有沒有[有沒有][有沒有]
-可以[可以][可以]
-越來越[越來越][越來越]
