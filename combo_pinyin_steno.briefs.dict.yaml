@@ -2,50 +2,653 @@
 #
 # 宮保拼音縮略碼詞典
 #
-# 「詞兒縮略碼」包含少量示例，僅供參考。
-# 用家在日常使用中可自行總結補充。
+# 詞兒用宮保並擊碼和拼音二次編碼，確保兩種方式皆可輸入
 #
-# 每個詞用特定的並擊碼編碼一遍，再另起一行用拼音編碼一遍。
-# 如此，可保證兩種方法——用簡省的略碼和標準的多音節拼音碼均可輸入。
-# 不用拼音輸入的詞，可以只編並擊碼。
-
 ---
 name: combo_pinyin_steno.briefs
 version: '1.0'
 sort: by_weight
 ...
 
-# 詞兒縮略碼
-
-一個	IO
-一個	yi ge
+Rime	HGARE
 一下	HIAE
 一下	yi xia
+一個	IO
+一個	yi ge
+一會兒	HURE
+一會兒	yi hui er
+一邊	BVAN
+一邊	yi bian
+一點兒	DIRE
+一點兒	yi dian er
+三個	SGAN
+三個	san ge
+下來	HIAR
+下來	xia lai
+不中	ZFBURO
+不中	bu zhong
+不再	ZBAR
+不再	bu zai
+不可能	HBNE
+不可能	bu ke neng
+不在	ZBARE
+不在	bu zai
+不夠	BRO
+不夠	bu gou
+不好	HBAO
+不好	bu hao
+不對	BUR
+不對	bu dui
+不得	BUE
+不得	bu de
+不斷	BUAN
+不斷	bu duan
 不是	SB
 不是	bu shi
+不會	HBUR
+不會	bu hui
+不用	BIRO
+不用	bu yong
+不知道	ZFBO
+不知道	bu zhi dao
+不能	BUNE
+不能	bu neng
+不行	HBINE
+不行	bu xing
+不要	BIO
+不要	bu yao
+不讓	BIANE
+不讓	bu rang
+不需要	SBIO
+不需要	bu xu yao
+世界	SGIE
+世界	shi jie
+世界上	SGIANE
+世界上	shi jie shang
 中國	ZGO
 中國	zhong guo
 中國人	ZGN
 中國人	zhong guo ren
+中州韻	ZFVN
+中州韻	zhong zhou yun
+中文	ZHUN
+中文	zhong wen
+中間	ZGIAN
+中間	zhong jian
+主義	ZFV
+主義	zhu yi
+主要	ZFUAO
+主要	zhu yao
+之後	ZHRO
+之後	zhi hou
+之間	ZHGIAN
+之間	zhi jian
+事情	SHINE
+事情	shi qing
+五個	UE
+五個	wu ge
+人家	HGIA
+人家	ren jia
+人民	HGIN
+人民	ren min
 什麼	SHG
 什麼	shen me
+什麼事	SHGR
+什麼事	shen me shi
+什麼人	SHGIN
+什麼人	shen me ren
+什麼情況	SHGUARO
+什麼情況	shen me qing kuang
+什麼意思	SHGIR
+什麼意思	shen me yi si
+什麼時候	SHGO
+什麼時候	shen me shi hou
+什麼樣	SHGIANE
+什麼樣	shen me yang
+今天	HTIAN
+今天	jin tian
+仍然	HGIAN
+仍然	reng ran
 他們	TN
 他們	ta men
+他的	TO
+他的	ta de
+代碼	DUA
+代碼	dai ma
+代表	DARO
+代表	dai biao
+以爲	IRE
+以爲	yi wei
+任何	SHGE
+任何	ren he
+但是	SDAN
+但是	dan shi
+作業	ZUE
+作業	zuo ye
+作爲	ZURE
+作爲	zuo wei
+作用	ZVNE
+作用	zuo yong
+你們	CLDN
+你們	ni men
+你們好	CLDANO
+你們好	ni men hao
+你們的	CLDNE
+你們的	ni men de
+你好	CLDAO
+你好	ni hao
+你的	CLDE
+你的	ni de
+使用	SHIRO
+使用	shi yong
+先生	SHGNE
+先生	xian sheng
+免費	FBURE
+免費	mian fei
+全國	CVO
+全國	quan guo
+兩個	LGIANE
+兩個	liang ge
+公司	SGR
+公司	gong si
+公式	SGURO
+公式	gong shi
+共享	HGIARO
+共享	gong xiang
+共識	SGURO
+共識	gong shi
+其中	ZKIRO
+其中	qi zhong
+其他	KIAE
+其他	qi ta
+其實	SHKI
+其實	qi shi
+出來	CHUAR
+出來	chu lai
+出現	CHIAN
+出現	chu xian
+出發	CHUA
+出發	chu fa
+分鐘	FURO
+分鐘	fen zhong
+判斷	PUAN
+判斷	pan duan
+創造	CLUAO
+創造	chuang zao
+功能	GUNE
+功能	gong neng
+勞動	LDUARO
+勞動	lao dong
+十一	SHI
+十一	shi yi
+十二	SHR
+十二	shi er
+千萬	CHUAN
+千萬	qian wan
+即使	SHGI
+即使	ji shi
+原來如此	CHGVAN
+原來如此	yuan lai ru ci
+厲害	LIAR
+厲害	li hai
+參加	CGIA
+參加	can jia
+參考	CKAO
+參考	can kao
+及時	SHGI
+及時	ji shi
+只是	ZHR
+只是	zhi shi
+只有	ZFIR
+只有	zhi you
+只管	ZGUAN
+只管	zhi guan
+只要	ZFIO
+只要	zhi yao
+可乎	HKU
+可乎	ke hu
+可以	KIO
+可以	ke yi
+可是	SK
+可是	ke shi
+可能	HKNE
+可能	ke neng
+各位	GURE
+各位	ge wei
+同學	TVNE
+同學	tong xue
+同志	TR
+同志	tong zhi
+同時	STURO
+同時	tong shi
+哪些	SLDIAE
+哪些	na xie
+哪個	LDE
+哪個	na ge
+哪兒	LDARE
+哪兒	na er
+哪裏	LDIAE
+哪裏	na li
+問題	TVN
+問題	wen ti
+喜歡	SHVAN
+喜歡	xi huan
+單位	DUAR
+單位	dan wei
+單元	DVAN
+單元	dan yuan
+四個	SGE
+四個	si ge
+因爲	LDUR
+因爲	yin wei
+困難	HKUAN
+困難	kun nan
+國家	GUAE
+國家	guo jia
+地方	DIANE
+地方	di fang
+執行	ZFINE
+執行	zhi xing
+多少	SDAO
+多少	duo shao
+大學	DVE
+大學	da xue
+大家	DIAE
+大家	da jia
+好像	SHIANO
+好像	hao xiang
+好的	HAE
+好的	hao de
+如下	HGIAE
+如下	ru xia
+如何	HGUE
+如何	ru he
+如果	HGO
+如果	ru guo
+如此	CHGU
+如此	ru ci
+如此甚好	CHGUAO
+如此甚好	ru ci shen hao
+學習	SHVE
+學習	xue xi
+完全	CHVAN
+完全	wan quan
+完成	CHNE
+完成	wan cheng
+客戶	HKU
+客戶	ke hu
+實現	SHIAN
+實現	shi xian
+對於	DV
+對於	dui yu
+小時	SIAR
+小時	xiao shi
+就是	ZHG
+就是	jiu shi
+居戎氏	SHGIRO
+居戎氏	ju rong shi
+展示	ZHAN
+展示	zhan shi
+屬於	SHV
+屬於	shu yu
+工作	ZGUO
+工作	gong zuo
+希望	HIARO
+希望	xi wang
+幾個	GIO
+幾個	ji ge
+引擎	HGINE
+引擎	yin qing
+強化	HKUA
+強化	qiang hua
+很好	HANO
+很好	hen hao
+從來	CLDAR
+從來	cong lai
+必要	BVAO
+必要	bi yao
+必須	SBV
+必須	bi xu
+快速	SKU
+快速	kuai su
+怎樣	ZIANE
+怎樣	zen yang
+怎麼	ZFBN
+怎麼	zen me
+怎麼回事	ZFBUR
+怎麼回事	zen me hui shi
+怎麼樣	ZFBIANE
+怎麼樣	zen me yang
+怎麼辦	ZFBAN
+怎麼辦	zen me ban
+思想	SHIANE
+思想	si xiang
+思考	SKAO
+思考	si kao
+您好	LDIANO
+您好	nin hao
+情況	CUARO
+情況	qing kuang
+想要	SIANO
+想要	xiang yao
+感覺	GVAE
+感覺	gan jue
+感謝	SGIAE
+感謝	gan xie
+應用	INO
+應用	ying yong
+應當	SHGANE
+應當	ying dang
+應該	SHGAR
+應該	ying gai
 我們	NO
 我們	wo men
+我們的	DNO
+我們的	wo men de
+我的	DO
+我的	wo de
+或者	HUE
+或者	huo zhe
+戰士	ZHAN
+戰士	zhan shi
+所以	SO
+所以	suo yi
+所有	SHIR
+所有	suo you
+所謂	SURE
+所謂	suo wei
+技術	SHGV
+技術	ji shu
+投入	CLTU
+投入	tou ru
+拒絕	ZGVE
+拒絕	ju jue
+持續	CHV
+持續	chi xu
+提供	TIRO
+提供	ti gong
+效果	HGUAO
+效果	xiao guo
+方便	HBIAN
+方便	fang bian
+方向	HUANE
+方向	fang xiang
+方法	FUARO
+方法	fang fa
+方面	ZFBIAN
+方面	fang mian
+明白	FBUAR
+明白	ming bai
 是不是	SHB
 是不是	shi bu shi
+是個	SG
+是個	shi ge
+時候	SHO
+時候	shi hou
+時間	SGIAN
+時間	shi jian
+更新	SGIN
+更新	geng xin
+最坏	ZUAR
+最坏	zui huai
+最好	ZUAO
+最好	zui hao
+最後	ZHUR
+最後	zui hou
 有沒有	ZFBRO
 有沒有	you mei you
+朋友	PIR
+朋友	peng you
+朋友們	PVN
+朋友們	peng you men
+東西	SDIRO
+東西	dong xi
+條件	TIANO
+條件	tiao jian
+標準	BUN
+標準	biao zhun
+正在	ZFARE
+正在	zheng zai
+正確	ZFVE
+正確	zheng que
+比較	GVAO
+比較	bi jiao
+毫無	HUAO
+毫無	hao wu
+水平	SPINE
+水平	shui ping
+永遠	VANE
+永遠	yong yuan
+決定	SHGVE
+決定	jue ding
+沒事	ZFBR
+沒事	mei shi
+沒問題	FBVN
+沒問題	mei wen ti
 沒有	ZFB
 沒有	mei you
+沒法	ZFBUA
+沒法	mei fa
+活動	HDURO
+活動	huo dong
+涉及	SHGIE
+涉及	she ji
+準備	ZBUR
+準備	zhun bei
+準確	ZKVE
+準確	zhun que
+無法	FUA
+無法	wu fa
+然後	HGARO
+然後	ran hou
+熱情	CHGINE
+熱情	re qing
+爲了	URE
+爲了	wei le
+爲什麼	FBUR
+爲什麼	wei shen me
+特別	TVE
+特別	te bie
+現在	ZHAR
+現在	xian zai
+理想	SLIANE
+理想	li xiang
+理解	LGIE
+理解	li jie
+環境	SHGUAN
+環境	huan jing
+生產	CHAN
+生產	sheng chan
+發展	FIAN
+發展	fa zhan
+發明	FBIANE
+發明	fa ming
+百分之	ZFBAR
+百分之	bai fen zhi
+直觀	ZHGUAN
+直觀	zhi guan
+瞭解	LGIAR
+瞭解	liao jie
+知識	ZHR
+知識	zhi shi
+知道	ZFO
+知道	zhi dao
+研究	HGIR
+研究	yan jiu
+社會	SHURE
+社會	she hui
+科學	HKVE
+科學	ke xue
+程序	CLVNE
+程序	cheng xu
+符號	FAO
+符號	fu hao
+管理	LGUAN
+管理	guan li
+管理員	LGVAN
+管理員	guan li yuan
+簡單	HDAN
+簡單	jian dan
+結合	HGIE
+結合	jie he
+絕對	ZDUR
+絕對	jue dui
+給我	GO
+給我	gei wo
+經常	CLGIANE
+經常	jing chang
+經歷	LGINE
+經歷	jing li
+經理	LGINE
+經理	jing li
+經過	GINO
+經過	jing guo
+編程	CLBNE
+編程	bian cheng
+繼續	SGV
+繼續	ji xu
+羣衆	KVNE
+羣衆	qun zhong
+習慣	SGUAN
+習慣	xi guan
+老師	LARO
+老師	lao shi
+考慮	LKV
+考慮	kao lv
+而且	CIRE
+而且	er qie
+能夠	LDRO
+能夠	neng gou
+自己	ZGI
+自己	zi ji
+處理	CLV
+處理	chu li
+表現	HBIAO
+表現	biao xian
+表示	BIAR
+表示	biao shi
+表達	BIA
+表達	biao da
+表達式	SHBIA
+表達式	biao da shi
+補充	CLBURO
+補充	bu chong
+規則	ZGE
+規則	gui ze
+解決	GIARE
+解決	jie jue
+解釋	SHGIAR
+解釋	jie shi
+計劃	HGVA
+計劃	ji hua
+討論	LTUN
+討論	tao lun
+記錄	LGU
+記錄	ji lu
+訪問	FUN
+訪問	fang wen
+設計	SHGIE
+設計	she ji
+調整	TIARO
+調整	tiao zheng
+謝謝	SHIE
+謝謝	xie xie
+變化	HBUA
+變化	bian hua
+起來	KIAR
+起來	qi lai
 越來越	LVRE
 越來越	yue lai yue
+足夠	ZGRO
+足夠	zu gou
+軟件	HGVAN
+軟件	ruan jian
+輸入	SHGU
+輸入	shu ru
 輸入法	SHGUA
 輸入法	shu ru fa
+轉換	ZHUAN
+轉換	zhuan huan
+辦法	BUA
+辦法	ban fa
+這些	ZFIE
+這些	zhe xie
 這個	ZO
 這個	zhe ge
+這兒	ZFR
+這兒	zhe er
 這是	ZR
 這是	zhe shi
+這時	ZHI
+這時	zhe shi
+這樣	ZFIANE
+這樣	zhe yang
 這裏	ZFI
 這裏	zhe li
+這麼	ZFBE
+這麼	zhe me
+這麼多	ZFBUO
+這麼多	zhe me duo
+這麼快	ZFBUAR
+這麼快	zhe me kuai
+通過	TUNE
+通過	tong guo
+進行	ZHINE
+進行	jin xing
+運用	VNE
+運用	yun yong
+運行	HVNE
+運行	yun xing
+過來	LGUAR
+過來	guo lai
+過程	CLGNE
+過程	guo cheng
+選擇	SVAE
+選擇	xuan ze
+還是	HARE
+還是	hai shi
+那些	SLDIE
+那個	LDO
+那個	na ge
+那兒	LDUAR
+那兒	na er
+那裏	LDIA
+那裏	na li
+那麼	LDUE
+那麼	na me
+部署	SHBU
+部署	bu shu
+都是	SDRO
+都是	dou shi
+都有	DIRO
+都有	dou you
+重要	ZFIAO
+重要	zhong yao
+鍵盤	HPAN
+鍵盤	jian pan
+開始	SKAR
+開始	kai shi
+開源	HKAR
+開源	kai yuan
+開發	FKA
+開發	kai fa
+關係	HGI
+關係	guan xi
+關注	ZGU
+關注	guan zhu
+附屬	SFU
+附屬	fu shu
+雖然	SHGAN
+雖然	sui ran
+需要	SIO
+需要	xu yao
+非常	FIANE
+非常	fei chang
+非常好	FIAO
+非常好	fei chang hao
+項目	FBUARO
+項目	xiang mu
+高超	CLGAO
+高超	gao chao
+麻煩	FBUAN
+麻煩	ma fan
