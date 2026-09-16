@@ -1,14 +1,16 @@
-# 囧氏自釀宮保拼音縮略碼
+# 宮保並技術 · 囧氏自釀縮略碼
 
-配方： ℞ **lotem/rime-combo-pinyin-briefs**
+配方： ℞ **lotem/rime-combo-pinyin-steno**
 
-Rime [宮保拼音](https://github.com/rime/rime-combo-pinyin) 縮略碼
+Rime [宮保拼音](https://github.com/rime/rime-combo-pinyin) 速記方案（`combo_pinyin_steno`）與縮略碼詞庫
 
 ## 簡介
 
 宮保拼音是由居戎氏設計、在標準電腦鍵盤上多鍵並擊輸入拼音的方法。
 
 *並擊* （chord-typing）是指：同時按下鍵盤上的多個按鍵。
+
+本專案早期以縮略碼將並擊組合映射至多音節拼音；現已升級爲原生速記架構——新增 Rime 輸入方案 **`combo_pinyin_steno`**，直接在詞典裏爲最終字詞編入並擊碼，省去中間拼音轉譯環節，實現並擊即出詞、一擊定字。
 
 ### 學習資料
 
@@ -22,16 +24,18 @@ Rime [宮保拼音](https://github.com/rime/rime-combo-pinyin) 縮略碼
 
 ## 安裝
 
-[東風破](https://github.com/rime/plum) 安裝口令： `bash rime-install combo-pinyin lotem/rime-combo-pinyin-briefs`
+[東風破](https://github.com/rime/plum) 安裝口令： `bash rime-install combo-pinyin lotem/rime-combo-pinyin-steno`
+
+安裝完成後，在輸入法列表中啓用 `combo_pinyin_steno` 方案。
 
 ### 縮略碼
 
 七指禪佈局可支持用戶自定義的縮略碼，利用閒置的並擊組合快速輸入常用詞。
 
 縮略碼不遵循嚴格的編碼規則，需要使用者根據自己的用詞習慣和對拼音的理解逐一制定。
-可將詞語中標誌性的語音信息壓縮在一次並擊的編碼中以方便記憶，但不得與已有並擊碼衝突。
+可將詞語中標誌性的語音信息壓縮在一次並擊的編碼中以方便記憶。
 
-[℞ `lotem/rime-combo-pinyin-briefs`](https://github.com/lotem/rime-combo-pinyin-briefs) 可作參考。
+[℞ `lotem/rime-combo-pinyin-steno`](https://github.com/lotem/rime-combo-pinyin-steno) 可作參考。
 
 #### 講解視頻
 
@@ -42,7 +46,7 @@ Rime [宮保拼音](https://github.com/rime/rime-combo-pinyin) 縮略碼
 縮略碼爲有損編碼。不具有普遍性。
 以常用雙音節詞爲縮略的主要目標，外加少量極高頻三音節詞。
 
-制定縮略碼的方法是將取詞中每個字的特徵音素，選取提示性強、指法合理的組合，整合成一個並擊碼。
+制定縮略碼的方法是取詞中每個字的特徵音素，選取提示性強、指法合理的組合，整合成一個並擊碼。
 縮略碼允許與已有並擊碼「重碼」，但應儘量規避有高頻字的基本音節和容易產生歧義的縮略碼。
 
 筆者有特別的輸入習慣：並擊碼按照方音區分尖團。這樣一來，基本音節要佔用更多的並擊碼。
@@ -54,9 +58,11 @@ Rime [宮保拼音](https://github.com/rime/rime-combo-pinyin) 縮略碼
 
 #### 技術實現
 
-縮略碼詞典採用宮保並擊碼與全拼音節「雙軌二次編碼」。
-既可在原生並擊方案（`combo_pinyin_steno`）中憑並擊碼直接精確定奪字詞、一擊命中；
-亦可相容通用拼音方案，兼顧手速爆發力與詞典兼容性。
+縮略體系已由原先的拼音轉換升級爲詞典直出：
+
+1. **速記直出（`combo_pinyin_steno`）**：在全新的原生並擊方案中，詞典直接以宮保並擊碼爲字詞編碼。
+並擊擊發時直接命中字詞上屏，無拼音轉換開銷，大幅降低歧義與延遲。
+2. **雙軌相容**：詞庫亦保留與通用拼音方案的相容對照，兼顧極速擊發的爆發力與一般拼音詞庫的相容性。
 
 #### 何時制定縮略碼
 
