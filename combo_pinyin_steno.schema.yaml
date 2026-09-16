@@ -1,0 +1,116 @@
+# Rime schema
+# encoding: utf-8
+
+schema:
+  schema_id: combo_pinyin_steno
+  name: 宮保並擊術
+  version: '4.0'
+  author:
+    - 居戎氏 <chen.sst@gmail.com>
+  description: |
+    宮保拼音並擊術
+    節奏明快又直觀
+    一擊一個中文字
+    能分平翹與尖團
+    標準設備廣兼容
+    六鍵無衝七指禪
+    速記千宗歸簡易
+    音韻萬變列琴盤
+
+    https://github.com/rime/home/wiki/ComboPinyin
+  dependencies:
+    - luna_pinyin
+
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: [ 中文, 西文 ]
+    abbrev: [ 中, Ａ ]
+  - name: full_shape
+    states: [ 半角, 全角 ]
+  - name: simplification
+    states: [ 漢字, 汉字 ]
+  - name: ascii_punct
+    states: [ 。，, ．， ]
+
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - streaming_chord_processor  # 並擊定界處理器
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - script_translator
+  filters:
+    - simplifier
+    - uniquifier
+
+ascii_composer:
+  inline_uppercase: true
+  inline_keypad: true
+  bindings:
+    __include: combo_pinyin_rules:/ascii_bindings
+
+editor:
+  bindings:
+    __include: combo_pinyin_rules:/editor_bindings
+
+streaming_chord:
+  initial_keys: XSCZHLFGDBKTP
+  final_keys: YIUVANREO
+  chord_duration_ms: 60           # 雙手和弦落鍵容差窗口
+  chord_timeout_ms: 120           # 連打音節超時切分
+  key_map:
+    __include: combo_pinyin_rules:/key_map
+  # 由抬鍵消息封閉的並擊片段，按照並擊鍵序重排並界定音節
+  canonicalize:
+    __include: combo_pinyin_rules:/canonicalize
+
+speller:
+  # 經過按鍵映射的並擊碼，供棱鏡編譯使用
+  alphabet: 'SCZHLFGDBKTPIUVANREOXY[]'
+  delimiter: " '"
+  algebra:
+    __include: combo_pinyin_rules:/algebra
+
+translator:
+  dictionary: combo_pinyin_steno
+  # 匹配完整的並擊音節
+  enable_completion: false
+  # 未界定音節的連續輸入，算法對切分片段按標準並擊鍵序重排
+  canonicalize:
+    __include: combo_pinyin_rules:/canonicalize
+  preedit_format:
+    __include: combo_pinyin_rules:/preedit_steno
+
+punctuator:
+  import_preset: symbols
+
+recognizer:
+  patterns:
+    punct: '^/([0-9]0?|[A-Za-z]+)$'
+
+key_binder:
+  import_preset: default
+  bindings:
+    # 不用 , . 翻頁
+    - { when: paging, accept: comma, send: comma }
+    - { when: has_menu, accept: period, send: period }
+
+__patch:
+  # 使用八股文語言模型
+  - grammar:/hant?
+
+  # 用家自選配置
+  - combo_pinyin_steno.custom:/patch?
