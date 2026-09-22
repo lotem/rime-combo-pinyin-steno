@@ -36,5 +36,7 @@ import_tables:
 賣	FBUAR
 哪	LDAE
 那	LDUA
-有	RO  # 通借拼音 ou 的並擊碼
-又	RE  # 通借拼音 ei 的並擊碼
+# 通借拼音 ou 的並擊碼
+有	RO
+# 通借拼音 ei 的並擊碼
+又	RE
